@@ -53,7 +53,7 @@ var app = angular
 						$http(
 								{
 									url : 'activate.htm',
-									method : 'POS	T',
+									method : 'POST',
 									headers : {
 										'Content-Type' : 'application/x-www-form-urlencoded'
 									},
