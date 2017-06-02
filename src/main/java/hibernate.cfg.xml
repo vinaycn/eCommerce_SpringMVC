@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/farmingaid</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.me.pojo.Person" />
+        <mapping class="com.me.pojo.Farmer" />
+        <mapping class="com.me.pojo.Supplier" />
+        <mapping class="com.me.pojo.Retailer" />
+        <mapping class="com.me.pojo.Address" />
+        <mapping class="com.me.pojo.UserAccount" />
+        <mapping class="com.me.pojo.Product" />
+        <mapping class="com.me.pojo.ProductCategory" />
+        <mapping class="com.me.pojo.Crop" />
+        <mapping class="com.me.pojo.CropCategory" />
+        <mapping class="com.me.pojo.FarmerOrder" />
+        <mapping class="com.me.pojo.OrderItem" />
+        <mapping class="com.me.pojo.Bids" />
+    </session-factory>
+</hibernate-configuration>

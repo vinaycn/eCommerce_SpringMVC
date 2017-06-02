@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.template.farmer" template="/WEB-INF/views/farmerLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/farmerHeader.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/farmerFooter.jsp"></put-attribute>
+	</definition>
+	<definition name="addCrop" extends="base.template.farmer">
+		<put-attribute name="body" value="/WEB-INF/views/addCrop.jsp"></put-attribute>
+	</definition>
+	<definition name="viewProducts" extends="base.template.farmer">
+		<put-attribute name="body" value="/WEB-INF/views/viewProducts.jsp"></put-attribute>
+	</definition>
+	<definition name="viewCrops" extends="base.template.farmer">
+		<put-attribute name="body" value="/WEB-INF/views/viewCrops.jsp"></put-attribute>
+	</definition>
+	<definition name="viewFarmerOrders" extends="base.template.farmer">
+		<put-attribute name="body"
+			value="/WEB-INF/views/viewFarmerOrders.jsp"></put-attribute>
+	</definition>
+	<definition name="farmerCart" extends="base.template.farmer">
+		<put-attribute name="body" value="/WEB-INF/views/farmerCart.jsp"></put-attribute>
+	</definition>
+	<definition name="confirmOrder" extends="base.template.farmer">
+		<put-attribute name="body" value="/WEB-INF/views/confirmOrder.jsp"></put-attribute>
+	</definition>
+	<definition name="viewFarmerOrders" extends="base.template.farmer">
+		<put-attribute name="body"
+			value="/WEB-INF/views/viewFarmerOrders.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>
