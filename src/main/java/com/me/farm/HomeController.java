@@ -86,7 +86,7 @@ public class HomeController {
 	@RequestMapping(value = "/registration.htm", method = RequestMethod.POST)
 	public String registerUser(@Valid @ModelAttribute("person") Person person, BindingResult result, Model model) {
 		person.getUserAccount().setStatus("Disabled");
-		System.out.println("dasdsad csadsada");
+		
 		EmailSender e = new EmailSender();
 		boolean con = false;
 		if (result.hasErrors()) {

@@ -69,6 +69,7 @@
 								<option>Farmer</option>
 								<option>Supplier</option>
 								<option>Retailer</option>
+								<option>Admin</option>
 							</select>
 						</div>
 						<div class="form-group">
