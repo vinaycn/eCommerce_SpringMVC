@@ -6,7 +6,6 @@ import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
-import org.springframework.core.io.support.PropertiesLoaderSupport;
 
 import com.me.pojo.OrderItem;
 import com.me.pojo.Product;
