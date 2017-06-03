@@ -26,7 +26,6 @@ import com.me.pojo.Person;
 import com.me.pojo.ProductCategory;
 
 @Controller
-//@RequestMapping(value="/admin")
 public class AdminController {
 	
 	@Autowired
@@ -40,7 +39,7 @@ public class AdminController {
     @Autowired
     private JavaMailSender mailSender;
     
-    @RequestMapping(value="/admin/adminHome.htm")
+    @RequestMapping(value="/admin/adminHome.htm" ,method= RequestMethod.GET)
     public String getAdminPage()
     {
     	return "admin";
