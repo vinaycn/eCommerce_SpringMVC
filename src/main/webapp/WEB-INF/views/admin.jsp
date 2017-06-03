@@ -32,8 +32,7 @@
 					class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li class="divider"></li>
-					<li><a href="logout.htm"></i>
-							Log Out</a></li>
+					<li><a href="logout.htm"></i> Log Out</a></li>
 				</ul></li>
 		</ul>
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -84,7 +83,8 @@
 										<td>{{person.userAccount.role}}</td>
 										<td><button type="button" class="btn btn-success"
 												data-toggle="modal" data-target="#addressDetails"
-												ng-click="personDetails(person)">view Address Details</button></td>
+												ng-click="personDetails(person)">view Address
+												Details</button></td>
 										<td ng-show="person.userAccount.status=='Disabled'"><button
 												type="submit" ng-click="activate(person.personId,person)"
 												ng-disabled="activated" class="btn btn-default">Activate</button></td>
@@ -199,8 +199,8 @@
 				</dir-pagination-controls>
 			</div>
 		</div>
-		<div class="modal fade" id="addressDetails" tabindex="-1" role="dialog"
-			aria-labelledby="myModalLabel">
+		<div class="modal fade" id="addressDetails" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
