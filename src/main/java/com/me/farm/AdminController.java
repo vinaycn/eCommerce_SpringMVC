@@ -39,7 +39,7 @@ public class AdminController {
     @Autowired
     private JavaMailSender mailSender;
     
-    @RequestMapping(value="/admin/adminHome.htm" ,method= RequestMethod.GET)
+    @RequestMapping(value="admina/adminHome.htm" ,method= RequestMethod.GET)
     public String getAdminPage()
     {
     	return "admin";
