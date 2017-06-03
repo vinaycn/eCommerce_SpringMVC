@@ -163,7 +163,7 @@ public class HomeController {
 			}
 			return "redirect:farmer/viewAllProducts.htm";
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("admin")) {
-			return "redirect:/admin/adminHome.htm";
+			return "admin";
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("Supplier")) {
 			return "redirect:supplier/addProductPage.htm";
 		} else {
