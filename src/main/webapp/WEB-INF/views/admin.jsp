@@ -19,7 +19,8 @@
 <spring:url value="/resources/js/dirPagination.js" var="dirjs" />
 <script src="${dirjs}"></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <title>Insert title here</title>
 </head>
 <body ng-app="admin">
