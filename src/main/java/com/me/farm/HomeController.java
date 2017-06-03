@@ -144,7 +144,7 @@ public class HomeController {
 		return "signUp";
 	}
 
-	@SuppressWarnings("unused")
+	
 	@RequestMapping(value = "/access.htm", method = RequestMethod.POST)
 	public String verifyUser(@RequestParam("username") String userName, @RequestParam("password") String password,
 			HttpServletRequest request, Model model) {
@@ -189,6 +189,14 @@ public class HomeController {
 		JSONObject obj = new JSONObject();
 		obj.put("ue", cun);
 		out.println(obj);
+	}
+	
+	@RequestMapping(value="/logout.htm")
+	public String logOut(HttpServletRequest request,HttpServletResponse response)
+	{
+		HttpSession session=request.getSession();
+		session.invalidate();
+		return "redirect:/login.htm";
 	}
 
 }
