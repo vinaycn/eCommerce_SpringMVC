@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
@@ -19,8 +18,8 @@
 <spring:url value="/resources/js/dirPagination.js" var="dirjs" />
 <script src="${dirjs}"></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+<meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/> 
 <title>Insert title here</title>
 </head>
 <body ng-app="admin">
