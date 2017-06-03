@@ -40,7 +40,7 @@ public class AdminController {
     @Autowired
     private JavaMailSender mailSender;
     
-    @RequestMapping(value="adminHome.htm")
+    @RequestMapping(value="/adminHome.htm")
     public String getAdminPage()
     {
     	return "admin";
@@ -70,7 +70,7 @@ public class AdminController {
 
 	}
 	
-	@RequestMapping(value = "activate.htm", method = RequestMethod.POST)
+	@RequestMapping(value = "/activate.htm", method = RequestMethod.POST)
 	@ResponseBody
 	public void activateAccount(@RequestParam int personId, HttpServletResponse res) {
 		boolean act = registrationDao.activateAccount(personId);
@@ -149,7 +149,7 @@ public class AdminController {
 		}
 	}
 		
-	@RequestMapping(value="getCropCategories.htm",method=RequestMethod.GET)
+	@RequestMapping(value="/getCropCategories.htm",method=RequestMethod.GET)
 	@ResponseBody
 	public void getCropCategories(HttpServletResponse response)
 	{
@@ -169,7 +169,7 @@ public class AdminController {
 
 	}
 	
-	@RequestMapping(value="logout.htm")
+	@RequestMapping(value="/logout.htm")
 	public String logOut(HttpServletRequest request,HttpServletResponse response)
 	{
 		HttpSession session=request.getSession();

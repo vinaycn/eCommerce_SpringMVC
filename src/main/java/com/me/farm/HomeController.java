@@ -67,7 +67,7 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "home.htm", method = RequestMethod.GET)
+	@RequestMapping(value = "/home.htm", method = RequestMethod.GET)
 	public String getHome(Locale locale, Model model) {
 		return "home";
 	}
@@ -172,7 +172,7 @@ public class HomeController {
 
 	}
 
-	@RequestMapping(value = "checkUserName.htm", method = RequestMethod.POST)
+	@RequestMapping(value = "/checkUserName.htm", method = RequestMethod.POST)
 	@ResponseBody
 	public void checkUserName(@RequestParam String userName, HttpServletResponse res) {
 
