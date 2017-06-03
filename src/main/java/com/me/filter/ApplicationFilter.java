@@ -35,7 +35,7 @@ public class ApplicationFilter implements Filter {
 
 		
 
-		if (requestUrl.contains("/farm/admin/")) {
+		if (requestUrl.contains("/admina/")) {
 			System.out.println(requestUrl);
 			if ((session == null || session.getAttribute("Person") == null)
 					|| (!((Person) session.getAttribute("Person")).getUserAccount().getRole()
@@ -46,7 +46,7 @@ public class ApplicationFilter implements Filter {
 											// continue
 				// request.
 			}
-		} else if (requestUrl.contains("/farm/farmer/")) {
+		} else if (requestUrl.contains("/farmerf/")) {
 
 			System.out.println(requestUrl);
 			if ((session == null || session.getAttribute("Person") == null)
