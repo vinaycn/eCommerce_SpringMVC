@@ -21,8 +21,8 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>ApplicationFilter</filter-name>
-		<url-pattern>/admin/*</url-pattern>
-		<url-pattern>/farmer/*</url-pattern>
+		<url-pattern>/admina/*</url-pattern>
+		<url-pattern>/farmerf/*</url-pattern>
 		<url-pattern>/supplier/*</url-pattern>
 		<url-pattern>/retailer/*</url-pattern>
 	</filter-mapping>

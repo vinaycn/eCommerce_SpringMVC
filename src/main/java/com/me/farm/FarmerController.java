@@ -40,7 +40,7 @@ import com.me.pojo.Product;
 import com.me.pojo.ProductCategory;
 
 @Controller
-@RequestMapping(value="/farmer")
+@RequestMapping(value="/farmerf")
 public class FarmerController {
 	@Autowired
 	private RegistrationDao registrationDao;

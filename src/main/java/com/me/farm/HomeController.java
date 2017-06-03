@@ -162,7 +162,7 @@ public class HomeController {
 				CartList cList = new CartList();
 				session.setAttribute("CartList", cList);
 			}
-			return "redirect:farmer/viewAllProducts.htm";
+			return "redirect:farmerf/viewAllProducts.htm";
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("admin")) {
 			return "redirect:admina/adminHome.htm";
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("Supplier")) {
