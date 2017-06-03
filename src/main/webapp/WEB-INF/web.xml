@@ -23,8 +23,8 @@
 		<filter-name>ApplicationFilter</filter-name>
 		<url-pattern>/admina/*</url-pattern>
 		<url-pattern>/farmerf/*</url-pattern>
-		<url-pattern>/supplier/*</url-pattern>
-		<url-pattern>/retailer/*</url-pattern>
+		<url-pattern>/supplierr/*</url-pattern>
+		<url-pattern>/retailerr/*</url-pattern>
 	</filter-mapping>
 
 

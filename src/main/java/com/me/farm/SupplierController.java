@@ -33,7 +33,7 @@ import com.me.pojo.ProductCategory;
 import com.me.pojo.Supplier;
 
 @Controller
-@RequestMapping(value="/supplier")
+@RequestMapping(value="/supplierr")
 public class SupplierController {
 	@Autowired
 	private RegistrationDao registrationDao;

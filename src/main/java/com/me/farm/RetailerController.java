@@ -28,7 +28,7 @@ import com.me.pojo.ProductCategory;
 import com.me.pojo.Retailer;
 
 @Controller
-@RequestMapping(value="/retailer")
+@RequestMapping(value="/retailerr")
 public class RetailerController {
 
 	

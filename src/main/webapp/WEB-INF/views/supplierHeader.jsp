@@ -24,7 +24,7 @@
 				<ul class="dropdown-menu">
 					
 					<li class="divider"></li>
-					<li><a href="logout.htm"> Log Out</a></li>
+					<li><a href="${pageContext.request.contextPath}/logout.htm"> Log Out</a></li>
 				</ul></li>
 		</ul>
 	</div>

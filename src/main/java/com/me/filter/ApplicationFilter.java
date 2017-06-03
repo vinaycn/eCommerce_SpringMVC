@@ -40,7 +40,7 @@ public class ApplicationFilter implements Filter {
 			if ((session == null || session.getAttribute("Person") == null)
 					|| (!((Person) session.getAttribute("Person")).getUserAccount().getRole()
 							.equalsIgnoreCase("Admin"))) {
-				response.sendRedirect("/farm/login.htm");
+				response.sendRedirect("/login.htm");
 			} else {
 				chain.doFilter(req, res); // Logged-in user found, so just
 											// continue
@@ -52,30 +52,30 @@ public class ApplicationFilter implements Filter {
 			if ((session == null || session.getAttribute("Person") == null)
 					|| (!((Person) session.getAttribute("Person")).getUserAccount().getRole()
 							.equalsIgnoreCase("farmer"))) {
-				response.sendRedirect("/farm/login.htm");
+				response.sendRedirect("/login.htm");
 			} else {
 				chain.doFilter(req, res); // Logged-in user found, so just
 				System.out.println("Its farrrrrrrrrrrrrr");								// continue
 				// request.
 			}
-		} else if (requestUrl.contains("/farm/supplier/")) {
+		} else if (requestUrl.contains("/supplierr/")) {
 			System.out.println(requestUrl);
 			if ((session == null || session.getAttribute("Person") == null)
 					|| (!((Person) session.getAttribute("Person")).getUserAccount().getRole()
 							.equalsIgnoreCase("supplier"))) {
-				response.sendRedirect("/farm/login.htm");
+				response.sendRedirect("/login.htm");
 			} else {
 				chain.doFilter(req, res); // Logged-in user found, so just
 				System.out.println("Its supleeeeeeeeee");						// continue
 				// request.
 			}
 
-		} else if (requestUrl.contains("/farm/retailer/")) {
+		} else if (requestUrl.contains("/retailerr/")) {
 			System.out.println(requestUrl);
 			if ((session == null || session.getAttribute("Person") == null)
 					|| (!((Person) session.getAttribute("Person")).getUserAccount().getRole()
 							.equalsIgnoreCase("retailer"))) {
-				response.sendRedirect("/farm/login.htm");	
+				response.sendRedirect("/login.htm");	
 			} else {
 				chain.doFilter(req, res); // Logged-in user found, so just
 					System.out.println("Its Retailerrrrrrrrrrrrrrr");						// continue

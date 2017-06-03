@@ -32,7 +32,7 @@
 					class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li class="divider"></li>
-					<li><a href="logout.htm"></i> Log Out</a></li>
+					<li><a href="${pageContext.request.contextPath}/logout.htm"></i> Log Out</a></li>
 				</ul></li>
 		</ul>
 		<div class="collapse navbar-collapse navbar-ex1-collapse">

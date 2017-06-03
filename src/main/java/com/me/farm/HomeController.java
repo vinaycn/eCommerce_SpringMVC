@@ -166,9 +166,9 @@ public class HomeController {
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("admin")) {
 			return "redirect:admina/adminHome.htm";
 		} else if (person.getUserAccount().getRole().equalsIgnoreCase("Supplier")) {
-			return "redirect:supplier/addProductPage.htm";
+			return "redirect:supplierr/addProductPage.htm";
 		} else {
-			return "redirect:retailer/viewAllCrops.htm";
+			return "redirect:retailerr/viewAllCrops.htm";
 		}
 
 	}
