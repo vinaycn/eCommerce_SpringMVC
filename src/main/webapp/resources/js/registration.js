@@ -13,7 +13,7 @@ var app = angular.module("register", [])
                 	
                 	 if($scope.zipcode.length==5)
                 		 {
-                		 $http.get('http://maps.googleapis.com/maps/api/geocode/json?address='+zip+'&sensor=true').
+                		 $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+zip+'&sensor=true').
                 	        success(function(data) {
                 	            $scope.state=data.results[0].address_components[3].short_name;
                 	            $scope.city=data.results[0].address_components[1].short_name;
