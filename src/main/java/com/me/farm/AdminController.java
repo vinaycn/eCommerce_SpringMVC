@@ -169,12 +169,6 @@ public class AdminController {
 
 	}
 	
-	@RequestMapping(value="/logout.htm")
-	public String logOut(HttpServletRequest request,HttpServletResponse response)
-	{
-		HttpSession session=request.getSession();
-		session.invalidate();
-		return "redirect:login.htm";
-	}
+	
     
 }
